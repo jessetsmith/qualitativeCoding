@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/jessetsmith/qualitativeCoding.git/static/css/main.4f0472c7.css",
-    "main.js": "/jessetsmith/qualitativeCoding.git/static/js/main.18ad7475.js",
-    "static/js/453.d3777af9.chunk.js": "/jessetsmith/qualitativeCoding.git/static/js/453.d3777af9.chunk.js",
-    "static/media/busStop.JPG": "/jessetsmith/qualitativeCoding.git/static/media/busStop.f2843922e2975440a5de.JPG",
-    "static/media/TransitCenterMapping.png": "/jessetsmith/qualitativeCoding.git/static/media/TransitCenterMapping.7493e49bd01a952f4ee2.png",
-    "static/media/busInterior.JPG": "/jessetsmith/qualitativeCoding.git/static/media/busInterior.dd6bbc53cd801ad50b25.JPG",
-    "static/media/Curatorial Inquiry.png": "/jessetsmith/qualitativeCoding.git/static/media/Curatorial Inquiry.b588b9acbbf8cbf06105.png",
-    "static/media/busBPHero.jpg": "/jessetsmith/qualitativeCoding.git/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
-    "index.html": "/jessetsmith/qualitativeCoding.git/index.html",
-    "main.4f0472c7.css.map": "/jessetsmith/qualitativeCoding.git/static/css/main.4f0472c7.css.map",
-    "main.18ad7475.js.map": "/jessetsmith/qualitativeCoding.git/static/js/main.18ad7475.js.map",
-    "453.d3777af9.chunk.js.map": "/jessetsmith/qualitativeCoding.git/static/js/453.d3777af9.chunk.js.map"
+    "main.css": "/qualitativeCoding/static/css/main.4f0472c7.css",
+    "main.js": "/qualitativeCoding/static/js/main.4a362593.js",
+    "static/js/453.d3777af9.chunk.js": "/qualitativeCoding/static/js/453.d3777af9.chunk.js",
+    "static/media/busStop.JPG": "/qualitativeCoding/static/media/busStop.f2843922e2975440a5de.JPG",
+    "static/media/TransitCenterMapping.png": "/qualitativeCoding/static/media/TransitCenterMapping.7493e49bd01a952f4ee2.png",
+    "static/media/busInterior.JPG": "/qualitativeCoding/static/media/busInterior.dd6bbc53cd801ad50b25.JPG",
+    "static/media/Curatorial Inquiry.png": "/qualitativeCoding/static/media/Curatorial Inquiry.b588b9acbbf8cbf06105.png",
+    "static/media/busBPHero.jpg": "/qualitativeCoding/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
+    "index.html": "/qualitativeCoding/index.html",
+    "main.4f0472c7.css.map": "/qualitativeCoding/static/css/main.4f0472c7.css.map",
+    "main.4a362593.js.map": "/qualitativeCoding/static/js/main.4a362593.js.map",
+    "453.d3777af9.chunk.js.map": "/qualitativeCoding/static/js/453.d3777af9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f0472c7.css",
-    "static/js/main.18ad7475.js"
+    "static/js/main.4a362593.js"
   ]
 }
