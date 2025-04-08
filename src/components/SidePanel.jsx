@@ -1,15 +1,23 @@
 import React, { useState, useRef } from 'react';
 import './SidePanel.css';
-import busSounds from '../assets/audio/busSounds.m4a';
-import busStopSounds from '../assets/audio/busStopSounds.m4a';
-import methodsDiscussion from '../assets/audio/methodsDiscussion.m4a';
-import passengerSounds from '../assets/audio/passengerSounds.m4a';
-import passengerSounds2 from '../assets/audio/passengerSounds2.m4a';
-import sensoryMapping from '../assets/audio/sensoryMapping.m4a';
-import tohonoTransitCenter from '../assets/audio/tohonoTransitCenter.m4a';
+// import busSounds from '../assets/audio/busSounds.mp3';
+// import busStopSounds from '../assets/audio/busStopSounds.mp3';
+// import methodsDiscussion from '../assets/audio/methodsDiscussion.mp3';
+// import passengerSounds from '../assets/audio/passengerSounds.mp3';
+// import passengerSounds2 from '../assets/audio/passengerSounds2.mp3';
+// import sensoryMapping from '../assets/audio/sensoryMapping.mp3';
+// import tohonoTransitCenter from '../assets/audio/tohonoTransitCenter.mp3';
+
+let busStopSounds = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170340%3Fsecret_token%3Ds-d7doqZ4HoBd&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let busSounds = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170352%3Fsecret_token%3Ds-zHObXTgMWaw&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let methodsDiscussion = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170348%3Fsecret_token%3Ds-Zpy1PjrMGTm&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let passengerSounds = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170328%3Fsecret_token%3Ds-FV8Re6Iupk5&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let passengerSounds2 = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170332%3Fsecret_token%3Ds-PMRHjThWYSB&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let sensoryMapping = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170344%3Fsecret_token%3Ds-eA1VfmkAc7d&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
+let tohonoTransitCenter = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170336%3Fsecret_token%3Ds-IVxaRMNgggi&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
 
 function SidePanel() {
-  const [currentAudioSrc, setCurrentAudioSrc] = useState('');
+  const [currentAudioEmbed, setCurrentAudioEmbed] = useState('');
   const audioRef = useRef(null);
   const optionsContainerRef = useRef(null);
 
@@ -52,38 +60,13 @@ function SidePanel() {
     }
   };
 
-  const handleSelect = async (option) => {
-    // If there's currently playing audio, pause it
-    if (audioRef.current) {
-      audioRef.current.pause();
-    }
-
-    setCurrentAudioSrc(option.audio);
-
-    if (audioRef.current) {
-      try {
-        // Wait for the audio to be loaded
-        await new Promise((resolve) => {
-          audioRef.current.oncanplaythrough = resolve;
-          audioRef.current.load();
-        });
-
-        // Now play the audio
-        await audioRef.current.play();
-      } catch (e) {
-        console.error('Error playing audio:', e);
-      }
-    }
+  const handleSelect = (option) => {
+    setCurrentAudioEmbed(option.audio);
   };
 
   return (
     <div className="side-panel">
-      <div className="audio-player-container">
-        <audio ref={audioRef} controls className="main-audio-player">
-          {currentAudioSrc && <source src={currentAudioSrc} type="audio/mpeg" />}
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+      <div className="audio-player-container" dangerouslySetInnerHTML={{ __html: currentAudioEmbed }} />
 
       <div className="options-container" ref={optionsContainerRef}>
         {Object.entries(options).map(([key, value]) => (

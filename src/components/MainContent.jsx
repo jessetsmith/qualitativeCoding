@@ -4,7 +4,6 @@ import busBPHero from '../assets/images/busBPHero.jpg';
 import busInterior from '../assets/images/busInterior.JPG';
 import busStop from '../assets/images/busStop.JPG';
 import curatorialInquiry from '../assets/images/Curatorial Inquiry.png';
-import digitalMappingCollage from '../assets/images/Digital Mapping Collage .png';
 import transitCenterMapping from '../assets/images/TransitCenterMapping.png';
 
 function MainContent() {
@@ -15,7 +14,6 @@ function MainContent() {
     busInterior,
     busStop,
     curatorialInquiry,
-    digitalMappingCollage,
     transitCenterMapping
   ];
 
