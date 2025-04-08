@@ -1,0 +1,106 @@
+.side-panel {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  text-align: left;
+  flex-shrink: 0; /* Prevents shrinking */
+  display: flex;
+  flex-direction: column;
+  height: 75vh; /* Adjust this value to match main content */
+  max-height: 600px; /* Set a max height to match main content */
+  position: relative;
+  overflow: hidden; /* Prevent panel from expanding */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.audio-player-container {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  background-color: #4a4a4a;
+  border-bottom: 1px solid #666;
+  z-index: 2;
+}
+
+.options-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #666 #4a4a4a;
+  padding-right: 10px;
+  margin-bottom: 50px; /* Space for scroll button */
+  max-height: calc(100% - 100px); /* Account for audio player and scroll button */
+}
+
+/* Webkit scrollbar styling */
+.options-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.options-container::-webkit-scrollbar-track {
+  background: #4a4a4a;
+}
+
+.options-container::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 4px;
+}
+
+.main-audio-player {
+  width: 100%;
+  height: 30px;
+}
+
+.panel-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #5a5a5a;
+}
+
+.panel-button {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.panel-button:hover {
+  background-color: #6a6a6a;
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6a6a6a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.scroll-button:hover {
+  background-color: #7a7a7a;
+}
+
+/* Custom audio player styling */
+.main-audio-player::-webkit-media-controls-panel {
+  background-color: #6a6a6a;
+}
+
+.main-audio-player::-webkit-media-controls-current-time-display,
+.main-audio-player::-webkit-media-controls-time-remaining-display {
+  color: white;
+}
