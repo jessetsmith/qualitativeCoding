@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/repositoryname/static/css/main.4f0472c7.css",
-    "main.js": "/repositoryname/static/js/main.7936f1db.js",
-    "static/js/453.d3777af9.chunk.js": "/repositoryname/static/js/453.d3777af9.chunk.js",
-    "static/media/busStop.JPG": "/repositoryname/static/media/busStop.f2843922e2975440a5de.JPG",
-    "static/media/TransitCenterMapping.png": "/repositoryname/static/media/TransitCenterMapping.7493e49bd01a952f4ee2.png",
-    "static/media/busInterior.JPG": "/repositoryname/static/media/busInterior.dd6bbc53cd801ad50b25.JPG",
-    "static/media/Curatorial Inquiry.png": "/repositoryname/static/media/Curatorial Inquiry.b588b9acbbf8cbf06105.png",
-    "static/media/busBPHero.jpg": "/repositoryname/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
-    "index.html": "/repositoryname/index.html",
-    "main.4f0472c7.css.map": "/repositoryname/static/css/main.4f0472c7.css.map",
-    "main.7936f1db.js.map": "/repositoryname/static/js/main.7936f1db.js.map",
-    "453.d3777af9.chunk.js.map": "/repositoryname/static/js/453.d3777af9.chunk.js.map"
+    "main.css": "/jessetsmith/qualitativeCoding.git/static/css/main.4f0472c7.css",
+    "main.js": "/jessetsmith/qualitativeCoding.git/static/js/main.18ad7475.js",
+    "static/js/453.d3777af9.chunk.js": "/jessetsmith/qualitativeCoding.git/static/js/453.d3777af9.chunk.js",
+    "static/media/busStop.JPG": "/jessetsmith/qualitativeCoding.git/static/media/busStop.f2843922e2975440a5de.JPG",
+    "static/media/TransitCenterMapping.png": "/jessetsmith/qualitativeCoding.git/static/media/TransitCenterMapping.7493e49bd01a952f4ee2.png",
+    "static/media/busInterior.JPG": "/jessetsmith/qualitativeCoding.git/static/media/busInterior.dd6bbc53cd801ad50b25.JPG",
+    "static/media/Curatorial Inquiry.png": "/jessetsmith/qualitativeCoding.git/static/media/Curatorial Inquiry.b588b9acbbf8cbf06105.png",
+    "static/media/busBPHero.jpg": "/jessetsmith/qualitativeCoding.git/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
+    "index.html": "/jessetsmith/qualitativeCoding.git/index.html",
+    "main.4f0472c7.css.map": "/jessetsmith/qualitativeCoding.git/static/css/main.4f0472c7.css.map",
+    "main.18ad7475.js.map": "/jessetsmith/qualitativeCoding.git/static/js/main.18ad7475.js.map",
+    "453.d3777af9.chunk.js.map": "/jessetsmith/qualitativeCoding.git/static/js/453.d3777af9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f0472c7.css",
-    "static/js/main.7936f1db.js"
+    "static/js/main.18ad7475.js"
   ]
 }
