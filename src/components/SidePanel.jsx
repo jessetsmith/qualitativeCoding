@@ -1,12 +1,5 @@
 import React, { useState, useRef } from 'react';
 import './SidePanel.css';
-// import busSounds from '../assets/audio/busSounds.mp3';
-// import busStopSounds from '../assets/audio/busStopSounds.mp3';
-// import methodsDiscussion from '../assets/audio/methodsDiscussion.mp3';
-// import passengerSounds from '../assets/audio/passengerSounds.mp3';
-// import passengerSounds2 from '../assets/audio/passengerSounds2.mp3';
-// import sensoryMapping from '../assets/audio/sensoryMapping.mp3';
-// import tohonoTransitCenter from '../assets/audio/tohonoTransitCenter.mp3';
 
 let busStopSounds = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170340%3Fsecret_token%3Ds-d7doqZ4HoBd&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
 let busSounds = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074170352%3Fsecret_token%3Ds-zHObXTgMWaw&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>';
@@ -18,7 +11,6 @@ let tohonoTransitCenter = '<iframe width="100%" height="166" scrolling="no" fram
 
 function SidePanel() {
   const [currentAudioEmbed, setCurrentAudioEmbed] = useState('');
-  const audioRef = useRef(null);
   const optionsContainerRef = useRef(null);
 
   const scrollToNext = () => {

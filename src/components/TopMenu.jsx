@@ -35,13 +35,13 @@ function TopMenu() {
                             <span>Audio</span>
                             {activeSubmenu === 'audio' && (
                                 <div className="submenu-content">
-                                    <a href="#bus-sounds">Bus Sounds</a>
-                                    <a href="#bus-stop-sounds">Bus Stop Sounds</a>
-                                    <a href="#methods">Methods Discussion</a>
-                                    <a href="#passenger-sounds">Passenger Sounds</a>
-                                    <a href="#passenger-sounds-2">Passenger Sounds 2</a>
-                                    <a href="#sensory-mapping">Sensory Mapping</a>
-                                    <a href="#transit-center">Tohono Transit Center</a>
+                                    <a href="#bus-sounds" target="_blank" rel="noopener noreferrer">Bus Sounds</a>
+                                    <a href="#bus-stop-sounds" target="_blank" rel="noopener noreferrer">Bus Stop Sounds</a>
+                                    <a href="#methods" target="_blank" rel="noopener noreferrer">Methods Discussion</a>
+                                    <a href="#passenger-sounds" target="_blank" rel="noopener noreferrer">Passenger Sounds</a>
+                                    <a href="#passenger-sounds-2" target="_blank" rel="noopener noreferrer">Passenger Sounds 2</a>
+                                    <a href="#sensory-mapping" target="_blank" rel="noopener noreferrer">Sensory Mapping</a>
+                                    <a href="#transit-center" target="_blank" rel="noopener noreferrer">Tohono Transit Center</a>
                                 </div>
                             )}
                         </div>
@@ -52,12 +52,12 @@ function TopMenu() {
                             <span>Images</span>
                             {activeSubmenu === 'images' && (
                                 <div className="submenu-content">
-                                    <a href="#bus-bp-hero">Bus BP Hero</a>
-                                    <a href="#bus-interior">Bus Interior</a>
-                                    <a href="#bus-stop">Bus Stop</a>
-                                    <a href="#curatorial-inquiry">Curatorial Inquiry</a>
-                                    <a href="#digital-mapping">Digital Mapping Collage</a>
-                                    <a href="#transit-center-mapping">Transit Center Mapping</a>
+                                    <a href="#bus-bp-hero" target="_blank" rel="noopener noreferrer">Bus BP Hero</a>
+                                    <a href="#bus-interior" target="_blank" rel="noopener noreferrer">Bus Interior</a>
+                                    <a href="#bus-stop" target="_blank" rel="noopener noreferrer">Bus Stop</a>
+                                    <a href="#curatorial-inquiry" target="_blank" rel="noopener noreferrer">Curatorial Inquiry</a>
+                                    <a href="#digital-mapping" target="_blank" rel="noopener noreferrer">Digital Mapping Collage</a>
+                                    <a href="#transit-center-mapping" target="_blank" rel="noopener noreferrer">Transit Center Mapping</a>
                                 </div>
                             )}
                         </div>
@@ -68,7 +68,11 @@ function TopMenu() {
                             <span>Videos</span>
                             {activeSubmenu === 'videos' && (
                                 <div className="submenu-content">
-                                    <p>Coming Soon</p>
+                                    <a href="https://drive.google.com/file/d/1727l0ulthvgNUYBeKf6e_QS13YGNdzyx/view?usp=sharing" target="_blank" rel="noopener noreferrer">SunTran Video 1</a>
+                                    <a href="https://drive.google.com/file/d/17r7ZIl9bMMi4svrVjeAbxoFVET7XDMkN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">SunTran Video 2</a>
+                                    <a href="https://drive.google.com/file/d/1UfSn1lXedWYqZmYQqhlJzpelCA7i7KI5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">SunTran Video 3</a>
+                                    <a href="https://drive.google.com/file/d/18FhHyupJgEEjZpNiDklcVJJVlzbTXtoN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">SunTran Video 4</a>
+                                    <a href="https://drive.google.com/file/d/19V2y5CWBXCwflT20Jzk8_MB48mf9Dil4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">SunTran Video 5</a>
                                 </div>
                             )}
                         </div>
@@ -91,9 +95,9 @@ function TopMenu() {
                             <span>Ethnographic Field Journals</span>
                             {activeSubmenu === 'efj' && (
                                 <div className="submenu-content">
-                                    <a href="#efj1-2">EFJ 1-2</a>
-                                    <a href="#efj3-4">EFJ 3-4</a>
-                                    <a href="#efj5-6">EFJ 5-6</a>
+                                    <a href="#efj1-2" target="_blank" rel="noopener noreferrer">EFJ 1-2</a>
+                                    <a href="#efj3-4" target="_blank" rel="noopener noreferrer">EFJ 3-4</a>
+                                    <a href="#efj5-6" target="_blank" rel="noopener noreferrer">EFJ 5-6</a>
                                 </div>
                             )}
                         </div>

@@ -9,7 +9,8 @@ function JournalTabs() {
   const journals = {
     'EFJ 1 - 2': 'https://drive.google.com/file/d/1NmmULOi4QCKgxathxcCf4LBfsGg6RvWn/preview?usp=sharing',
     'EFJ 3 - 4': 'https://drive.google.com/file/d/1U9MBneS4Sx2TbifocChKWzQUxbkXzTbT/preview?usp=sharing',
-    'EFJ 5 - 6': 'https://drive.google.com/file/d/1lD5wVPCv336SFwGNI7qhjvh0so92QQy1/preview?usp=sharing'
+    'EFJ 5 - 6': 'https://drive.google.com/file/d/1lD5wVPCv336SFwGNI7qhjvh0so92QQy1/preview?usp=sharing',
+    'ANALYSIS': 'https://drive.google.com/file/d/1lD5wVPCv336SFwGNI7qhjvh0so92QQy1/preview?usp=sharing'
   };
 
   const handleClick = (key) => {
