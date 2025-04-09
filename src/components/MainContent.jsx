@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import './MainContent.css';
 import busBPHero from '../assets/images/busBPHero.jpg';
-import busInterior from '../assets/images/busInterior.JPG';
-import busStop from '../assets/images/busStop.JPG';
-import curatorialInquiry from '../assets/images/Curatorial Inquiry.png';
-import transitCenterMapping from '../assets/images/TransitCenterMapping.png';
+import transition from '../assets/images/1TRANSITION.png';
+import awareness from '../assets/images/2AWARENESS.png';
+import adaptability from '../assets/images/3ADAPTABILITY.png';
+import collectiveCare from '../assets/images/4COLLECTIVECARE.png';
+import meaningMaking from '../assets/images/5MEANINGMAKING.png';
 
 function MainContent() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const images = [
     busBPHero,
-    busInterior,
-    busStop,
-    curatorialInquiry,
-    transitCenterMapping
+    transition,
+    awareness,
+    adaptability,
+    collectiveCare,
+    meaningMaking
   ];
 
   const nextImage = () => {
@@ -29,6 +32,19 @@ function MainContent() {
     );
   };
 
+  const handleImageClick = (e) => {
+    e.stopPropagation();
+    setShowOverlay(true);
+  };
+
+  const handleOverlayClick = () => {
+    setShowOverlay(false);
+  };
+
+  const handleOverlayImageClick = (e) => {
+    e.stopPropagation(); // Prevent the overlay from closing when clicking the image
+  };
+
   return (
     <div className="main-content">
       <button className="carousel-button prev" onClick={previousImage}>
@@ -40,16 +56,32 @@ function MainContent() {
           src={images[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
           className="hero-image"
-        // onError={(e) => {
-        //   console.error('Error loading image:', e);
-        //   e.target.src = './assets/images/busBPHero.jpg';
-        // }}
+          onClick={handleImageClick}
+          style={{ cursor: 'pointer' }}
         />
       </div>
 
       <button className="carousel-button next" onClick={nextImage}>
         &#8250;
       </button>
+
+      {showOverlay && (
+        <div className="overlay" onClick={handleOverlayClick}>
+          <div className="overlay-image-container" onClick={handleOverlayImageClick}>
+            <img
+              src={images[currentImageIndex]}
+              alt={`Slide ${currentImageIndex + 1}`}
+              className="overlay-image"
+            />
+            <button
+              className="close-button"
+              onClick={handleOverlayClick}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

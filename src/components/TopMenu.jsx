@@ -58,6 +58,11 @@ function TopMenu() {
                                     <a href="#curatorial-inquiry" target="_blank" rel="noopener noreferrer">Curatorial Inquiry</a>
                                     <a href="#digital-mapping" target="_blank" rel="noopener noreferrer">Digital Mapping Collage</a>
                                     <a href="#transit-center-mapping" target="_blank" rel="noopener noreferrer">Transit Center Mapping</a>
+                                    <a href="#transition" target="_blank" rel="noopener noreferrer">1. Transition</a>
+                                    <a href="#awareness" target="_blank" rel="noopener noreferrer">2. Awareness</a>
+                                    <a href="#adaptability" target="_blank" rel="noopener noreferrer">3. Adaptability</a>
+                                    <a href="#collective-care" target="_blank" rel="noopener noreferrer">4. Collective Care</a>
+                                    <a href="#meaning-making" target="_blank" rel="noopener noreferrer">5. Meaning Making</a>
                                 </div>
                             )}
                         </div>
