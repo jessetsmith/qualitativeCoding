@@ -91,3 +91,16 @@
   margin: 0;
   font-style: italic;
 }
+
+.dropdown-content .dropdown-item a {
+  display: block;
+  padding: 8px 20px;
+  color: #666;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content .dropdown-item a:hover {
+  background-color: #f5f5f5;
+  color: #4a4a4a;
+}

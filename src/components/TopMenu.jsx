@@ -113,7 +113,23 @@ function TopMenu() {
                 <span>Resources</span>
                 {activeDropdown === 'resources' && (
                     <div className="dropdown-content">
-                        <p>Coming Soon</p>
+                        <div
+                            className="dropdown-item"
+                            onMouseEnter={() => handleSubmenuEnter('drive')}
+                        >
+                            <span>Drive Files</span>
+                            {activeSubmenu === 'drive' && (
+                                <div className="submenu-content">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1wtnqNGUr3rHDH9ceps5NiSnmHhRTbNQ7?usp=sharing"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        View Full Data Collection
+                                    </a>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 )}
             </div>
