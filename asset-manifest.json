@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.40e25d18.css",
-    "main.js": "/static/js/main.512449a0.js",
+    "main.css": "/static/css/main.5a6af264.css",
+    "main.js": "/static/js/main.68ca29f4.js",
     "static/js/453.d3777af9.chunk.js": "/static/js/453.d3777af9.chunk.js",
-    "static/media/busStop.JPG": "/static/media/busStop.f2843922e2975440a5de.JPG",
-    "static/media/TransitCenterMapping.png": "/static/media/TransitCenterMapping.7493e49bd01a952f4ee2.png",
-    "static/media/busInterior.JPG": "/static/media/busInterior.dd6bbc53cd801ad50b25.JPG",
-    "static/media/Curatorial Inquiry.png": "/static/media/Curatorial Inquiry.b588b9acbbf8cbf06105.png",
+    "static/media/2AWARENESS.png": "/static/media/2AWARENESS.673503bc66d6e3dbf686.png",
+    "static/media/5MEANINGMAKING.png": "/static/media/5MEANINGMAKING.973b910189ed0b3e724f.png",
+    "static/media/3ADAPTABILITY.png": "/static/media/3ADAPTABILITY.0cc8a9123315d4e1f3f9.png",
+    "static/media/4COLLECTIVECARE.png": "/static/media/4COLLECTIVECARE.c8c2f9146eaa4e7b75d8.png",
+    "static/media/1TRANSITION.png": "/static/media/1TRANSITION.f57dfc12ea926e9cd635.png",
     "static/media/busBPHero.jpg": "/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
     "index.html": "/index.html",
-    "main.40e25d18.css.map": "/static/css/main.40e25d18.css.map",
-    "main.512449a0.js.map": "/static/js/main.512449a0.js.map",
+    "main.5a6af264.css.map": "/static/css/main.5a6af264.css.map",
+    "main.68ca29f4.js.map": "/static/js/main.68ca29f4.js.map",
     "453.d3777af9.chunk.js.map": "/static/js/453.d3777af9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40e25d18.css",
-    "static/js/main.512449a0.js"
+    "static/css/main.5a6af264.css",
+    "static/js/main.68ca29f4.js"
   ]
 }
