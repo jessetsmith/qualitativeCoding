@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './MainContent.css';
-import busBPHero from '../assets/images/busBPHero.jpg';
+import efjOneTwo from '../assets/images/EFJ1-2.jpg';
+import efjThreeFour from '../assets/images/EFJ3-4.jpg';
+import efjFiveSix from '../assets/images/EFJ_5-6.jpg';
 import transition from '../assets/images/1TRANSITION.png';
 import awareness from '../assets/images/2AWARENESS.png';
 import adaptability from '../assets/images/3ADAPTABILITY.png';
@@ -14,7 +16,9 @@ function MainContent() {
   const [showIntroOverlay, setShowIntroOverlay] = useState(true);
 
   const images = [
-    busBPHero,
+    efjOneTwo,
+    efjThreeFour,
+    efjFiveSix,
     transition,
     awareness,
     adaptability,
