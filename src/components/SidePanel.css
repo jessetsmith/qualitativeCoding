@@ -1,6 +1,6 @@
 .side-panel {
-  background-color: #4a4a4a;
-  color: white;
+  background-color: #f5f2e9; /* Cream color matching bus diagram background */
+  color: #333333; /* Dark text */
   padding: 20px;
   width: 200px;
   text-align: left;
@@ -20,8 +20,8 @@
   top: 0;
   padding: 10px 0;
   margin-bottom: 15px;
-  background-color: #4a4a4a;
-  border-bottom: 1px solid #666;
+  background-color: #f5f2e9;
+  border-bottom: 1px solid #cccccc;
   z-index: 2;
 }
 
@@ -41,11 +41,11 @@
 }
 
 .options-container::-webkit-scrollbar-track {
-  background: #4a4a4a;
+  background: #f5f2e9;
 }
 
 .options-container::-webkit-scrollbar-thumb {
-  background-color: #666;
+  background-color: #999999;
   border-radius: 4px;
 }
 
@@ -58,7 +58,7 @@
   margin: 10px 0;
   padding: 10px;
   border-radius: 4px;
-  background-color: #5a5a5a;
+  background-color: #e9e6dd; /* Slightly darker than the main panel */
 }
 
 .panel-button {
@@ -68,7 +68,7 @@
 }
 
 .panel-button:hover {
-  background-color: #6a6a6a;
+  background-color: #e0ddd4;
 }
 
 .scroll-button {
@@ -76,8 +76,8 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #6a6a6a;
-  color: white;
+  background-color: #999999;
+  color: #333333;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -92,7 +92,8 @@
 }
 
 .scroll-button:hover {
-  background-color: #7a7a7a;
+  background-color: #666666;
+  color: #ffffff;
 }
 
 /* Custom audio player styling */

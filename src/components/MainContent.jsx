@@ -6,10 +6,12 @@ import awareness from '../assets/images/2AWARENESS.png';
 import adaptability from '../assets/images/3ADAPTABILITY.png';
 import collectiveCare from '../assets/images/4COLLECTIVECARE.png';
 import meaningMaking from '../assets/images/5MEANINGMAKING.png';
+import introText from '../assets/images/IntroTextVector.png';
 
 function MainContent() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showOverlay, setShowOverlay] = useState(false);
+  const [showIntroOverlay, setShowIntroOverlay] = useState(true);
 
   const images = [
     busBPHero,
@@ -46,24 +48,55 @@ function MainContent() {
   };
 
   return (
-    <div className="main-content">
-      <button className="carousel-button prev" onClick={previousImage}>
-        &#8249;
-      </button>
+    <>
+      {/* Intro Overlay */}
+      {showIntroOverlay && (
+        <div className="intro-overlay">
+          <div className="intro-content">
+            <img
+              src={introText}
+              alt="Introduction Text"
+              className="intro-image"
+            />
+            <button
+              className="enter-button"
+              onClick={() => setShowIntroOverlay(false)}
+            >
+              Enter
+            </button>
+          </div>
+        </div>
+      )}
 
-      <div className="image-container">
-        <img
-          src={images[currentImageIndex]}
-          alt={`Slide ${currentImageIndex + 1}`}
-          className="hero-image"
-          onClick={handleImageClick}
-          style={{ cursor: 'pointer' }}
-        />
+      {/* Info Button */}
+      {!showIntroOverlay && (
+        <button
+          className="info-button"
+          onClick={() => setShowIntroOverlay(true)}
+        >
+          <span>i</span>
+        </button>
+      )}
+
+      <div className="main-content">
+        <button className="carousel-button prev" onClick={previousImage}>
+          &#8249;
+        </button>
+
+        <div className="image-container">
+          <img
+            src={images[currentImageIndex]}
+            alt={`Slide ${currentImageIndex + 1}`}
+            className="hero-image"
+            onClick={handleImageClick}
+            style={{ cursor: 'pointer' }}
+          />
+        </div>
+
+        <button className="carousel-button next" onClick={nextImage}>
+          &#8250;
+        </button>
       </div>
-
-      <button className="carousel-button next" onClick={nextImage}>
-        &#8250;
-      </button>
 
       {showOverlay && (
         <div className="overlay" onClick={handleOverlayClick}>
@@ -82,7 +115,7 @@ function MainContent() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
