@@ -35,13 +35,13 @@ function TopMenu() {
                             <span>Audio</span>
                             {activeSubmenu === 'audio' && (
                                 <div className="submenu-content">
-                                    <a href="#bus-sounds" target="_blank" rel="noopener noreferrer">Bus Sounds</a>
-                                    <a href="#bus-stop-sounds" target="_blank" rel="noopener noreferrer">Bus Stop Sounds</a>
-                                    <a href="#methods" target="_blank" rel="noopener noreferrer">Methods Discussion</a>
-                                    <a href="#passenger-sounds" target="_blank" rel="noopener noreferrer">Passenger Sounds</a>
-                                    <a href="#passenger-sounds-2" target="_blank" rel="noopener noreferrer">Passenger Sounds 2</a>
+                                    <a href="https://drive.google.com/file/d/1Yg_3K-nk5euKTT4rRdCfNfOkoXz7ike2/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Bus Sounds</a>
+                                    <a href="https://drive.google.com/file/d/1azA7XOJVPBP82syp2RhF83xGGkz8qWW7/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Bus Stop Sounds</a>
+                                    <a href="https://drive.google.com/file/d/1o1n6V-aaoFPk8tNz1NTdoT9rEdUx50K-/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Methods Discussion</a>
+                                    <a href="https://drive.google.com/file/d/1GYkUbKBTrK_HSJ2G_F2qE071ayVkFnVB/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Passenger Sounds</a>
+                                    <a href="https://drive.google.com/file/d/1AnvDeXe8ADw42JVoVMhYUPrttR065WX4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Passenger Sounds 2</a>
                                     <a href="#sensory-mapping" target="_blank" rel="noopener noreferrer">Sensory Mapping</a>
-                                    <a href="#transit-center" target="_blank" rel="noopener noreferrer">Tohono Transit Center</a>
+                                    <a href="https://drive.google.com/file/d/1vylPQ8xOjcLWlmU6XACzRpHLPXx0gqlD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Tohono Transit Center</a>
                                 </div>
                             )}
                         </div>
@@ -49,24 +49,15 @@ function TopMenu() {
                             className="dropdown-item"
                             onMouseEnter={() => handleSubmenuEnter('images')}
                         >
-                            <span>Images</span>
+                            <span>Images + Videos</span>
                             {activeSubmenu === 'images' && (
                                 <div className="submenu-content">
-                                    <a href="#bus-bp-hero" target="_blank" rel="noopener noreferrer">Bus BP Hero</a>
-                                    <a href="#bus-interior" target="_blank" rel="noopener noreferrer">Bus Interior</a>
-                                    <a href="#bus-stop" target="_blank" rel="noopener noreferrer">Bus Stop</a>
-                                    <a href="#curatorial-inquiry" target="_blank" rel="noopener noreferrer">Curatorial Inquiry</a>
-                                    <a href="#digital-mapping" target="_blank" rel="noopener noreferrer">Digital Mapping Collage</a>
-                                    <a href="#transit-center-mapping" target="_blank" rel="noopener noreferrer">Transit Center Mapping</a>
-                                    <a href="#transition" target="_blank" rel="noopener noreferrer">1. Transition</a>
-                                    <a href="#awareness" target="_blank" rel="noopener noreferrer">2. Awareness</a>
-                                    <a href="#adaptability" target="_blank" rel="noopener noreferrer">3. Adaptability</a>
-                                    <a href="#collective-care" target="_blank" rel="noopener noreferrer">4. Collective Care</a>
-                                    <a href="#meaning-making" target="_blank" rel="noopener noreferrer">5. Meaning Making</a>
+                                    <a href="https://drive.google.com/drive/folders/1WWa0w394ScHErY20fUzhmomYHa_QMxPe?usp=drive_link" target="_blank" rel="noopener noreferrer">Got To Full Album</a>
+
                                 </div>
                             )}
                         </div>
-                        <div
+                        {/* <div
                             className="dropdown-item"
                             onMouseEnter={() => handleSubmenuEnter('videos')}
                         >
@@ -80,7 +71,7 @@ function TopMenu() {
                                     <a href="https://drive.google.com/file/d/19V2y5CWBXCwflT20Jzk8_MB48mf9Dil4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">SunTran Video 5</a>
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                     </div>
                 )}
             </div>
@@ -100,9 +91,10 @@ function TopMenu() {
                             <span>Ethnographic Field Journals</span>
                             {activeSubmenu === 'efj' && (
                                 <div className="submenu-content">
-                                    <a href="#efj1-2" target="_blank" rel="noopener noreferrer">EFJ 1-2</a>
-                                    <a href="#efj3-4" target="_blank" rel="noopener noreferrer">EFJ 3-4</a>
-                                    <a href="#efj5-6" target="_blank" rel="noopener noreferrer">EFJ 5-6</a>
+                                    <a href="https://drive.google.com/file/d/1Zlxj5MrV1pKAz3zcbdMKO9aio3m1Gt3Y/view?usp=drive_link" target="_blank" rel="noopener noreferrer">EFJ 1-2</a>
+                                    <a href="https://drive.google.com/file/d/1QBz7dUqgS-oxfmzZXGsTPN0XL1UTNxE0/view?usp=drive_link" target="_blank" rel="noopener noreferrer">EFJ 3-4</a>
+                                    <a href="https://drive.google.com/file/d/1sokkrJAhsKn24MNG_aYPtsO8PzElx5y2/view?usp=drive_link" target="_blank" rel="noopener noreferrer">EFJ 5-6</a>
+                                    <a href="https://drive.google.com/file/d/1u1qNsAVEttQkcUEgzgleLyHZ3-E0Vtst/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Analysis</a>
                                 </div>
                             )}
                         </div>

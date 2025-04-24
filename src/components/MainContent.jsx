@@ -9,6 +9,11 @@ import adaptability from '../assets/images/3ADAPTABILITY.png';
 import collectiveCare from '../assets/images/4COLLECTIVECARE.png';
 import meaningMaking from '../assets/images/5MEANINGMAKING.png';
 import introText from '../assets/images/IntroTextVector.png';
+import benchStickers from '../assets/images/benchStickers.jpeg';
+import busDrawing from '../assets/images/busDrawing.jpeg';
+import paintSplatterGreen from '../assets/images/paintSplatterGreen.jpeg';
+import paintSplatterPink from '../assets/images/paintSplatterPink.jpeg';
+import treeShadow from '../assets/images/treeShadow.jpeg';
 
 function MainContent() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -23,7 +28,12 @@ function MainContent() {
     awareness,
     adaptability,
     collectiveCare,
-    meaningMaking
+    meaningMaking,
+    benchStickers,
+    busDrawing,
+    paintSplatterGreen,
+    paintSplatterPink,
+    treeShadow
   ];
 
   const nextImage = () => {
