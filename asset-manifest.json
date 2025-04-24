@@ -1,8 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c02cd7ef.css",
-    "main.js": "/static/js/main.bf0435fa.js",
+    "main.js": "/static/js/main.e56fa1a1.js",
     "static/js/453.d3777af9.chunk.js": "/static/js/453.d3777af9.chunk.js",
+    "static/media/treeShadow.jpeg": "/static/media/treeShadow.ba688deae64560472d37.jpeg",
+    "static/media/paintSplatterPink.jpeg": "/static/media/paintSplatterPink.e30a7cc91a099c77b954.jpeg",
+    "static/media/benchStickers.jpeg": "/static/media/benchStickers.b7f9c3fb73f7d049e841.jpeg",
+    "static/media/paintSplatterGreen.jpeg": "/static/media/paintSplatterGreen.5a00b5cdf50611bc5dfd.jpeg",
+    "static/media/busDrawing.jpeg": "/static/media/busDrawing.a093fe05abe1d2665f00.jpeg",
     "static/media/2AWARENESS.png": "/static/media/2AWARENESS.673503bc66d6e3dbf686.png",
     "static/media/5MEANINGMAKING.png": "/static/media/5MEANINGMAKING.973b910189ed0b3e724f.png",
     "static/media/3ADAPTABILITY.png": "/static/media/3ADAPTABILITY.0cc8a9123315d4e1f3f9.png",
@@ -15,11 +20,11 @@
     "static/media/busBPHero.jpg": "/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
     "index.html": "/index.html",
     "main.c02cd7ef.css.map": "/static/css/main.c02cd7ef.css.map",
-    "main.bf0435fa.js.map": "/static/js/main.bf0435fa.js.map",
+    "main.e56fa1a1.js.map": "/static/js/main.e56fa1a1.js.map",
     "453.d3777af9.chunk.js.map": "/static/js/453.d3777af9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c02cd7ef.css",
-    "static/js/main.bf0435fa.js"
+    "static/js/main.e56fa1a1.js"
   ]
 }
