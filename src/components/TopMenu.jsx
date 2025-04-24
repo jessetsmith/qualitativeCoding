@@ -52,7 +52,7 @@ function TopMenu() {
                             <span>Images + Videos</span>
                             {activeSubmenu === 'images' && (
                                 <div className="submenu-content">
-                                    <a href="https://drive.google.com/drive/folders/1WWa0w394ScHErY20fUzhmomYHa_QMxPe?usp=drive_link" target="_blank" rel="noopener noreferrer">Got To Full Album</a>
+                                    <a href="https://drive.google.com/drive/folders/1WWa0w394ScHErY20fUzhmomYHa_QMxPe?usp=drive_link" target="_blank" rel="noopener noreferrer">Go To Full Album</a>
 
                                 </div>
                             )}
