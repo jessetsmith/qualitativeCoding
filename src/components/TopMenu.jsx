@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './TopMenu.css';
 
 function TopMenu() {
@@ -20,6 +21,11 @@ function TopMenu() {
 
     return (
         <div className="top-menu">
+            <div className="menu-item">
+                <Link to="/" className="menu-link">
+                    <span>Home</span>
+                </Link>
+            </div>
             <div
                 className="menu-item"
                 onMouseEnter={() => handleMouseEnter('media')}
@@ -127,6 +133,36 @@ function TopMenu() {
                                 </div>
                             )}
                         </div>
+                    </div>
+                )}
+            </div>
+
+            <div
+                className="menu-item"
+                onMouseEnter={() => handleMouseEnter('ethnographic')}
+                onMouseLeave={handleMouseLeave}
+            >
+                <span>Ethnographic</span>
+                {activeDropdown === 'ethnographic' && (
+                    <div className="dropdown-content">
+                        <Link to="/ethnographic" className="dropdown-item-link">
+                            <span>Field Research</span>
+                        </Link>
+                    </div>
+                )}
+            </div>
+
+            <div
+                className="menu-item"
+                onMouseEnter={() => handleMouseEnter('litReview')}
+                onMouseLeave={handleMouseLeave}
+            >
+                <span>Lit Review</span>
+                {activeDropdown === 'litReview' && (
+                    <div className="dropdown-content">
+                        <Link to="/infographic" className="dropdown-item-link">
+                            <span>Infographic</span>
+                        </Link>
                     </div>
                 )}
             </div>

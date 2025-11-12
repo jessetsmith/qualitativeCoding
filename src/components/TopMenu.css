@@ -108,3 +108,35 @@
   background-color: #333333;
   color: #ffffff;
 }
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-link span {
+  transition: color 0.3s;
+  color: #e0e0e0;
+}
+
+.menu-link:hover span {
+  color: #ffffff;
+}
+
+.dropdown-item-link {
+  display: block;
+  padding: 8px 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dropdown-item-link:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dropdown-item-link span {
+  display: block;
+}

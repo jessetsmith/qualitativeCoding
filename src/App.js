@@ -1,36 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import TopMenu from "./components/TopMenu";
-import SidePanel from "./components/SidePanel";
-import MainContent from "./components/MainContent";
-import JournalTabs from "./components/JournalTabs";
-
-import busBP from "./assets/images/busBPHero.jpg";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Ethnographic from "./components/Ethnographic";
+import Infographic from "./components/Infographic";
 
 function App() {
-  const [journalContent, setJournalContent] = useState("");
-  const [imageSrc, setImageSrc] = useState(busBP);
-
-  const handleJournalClick = (content) => {
-    setJournalContent(content);
-  };
-
-  const handleImageSelect = (src) => {
-    setImageSrc(src);
-  };
-
   return (
-    <div className="App">
-      <TopMenu />
-      <div className="content-area">
-        <SidePanel onSelect={handleImageSelect} />
-        <MainContent imageSrc={imageSrc} />
+    <Router>
+      <div className="App">
+        <TopMenu />
+        <div className="main-content-wrapper">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/ethnographic" element={<Ethnographic />} />
+            <Route path="/infographic" element={<Infographic />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <JournalTabs onJournalClick={handleJournalClick} />
-      <div className="description">
-        <p>{journalContent}</p>
-      </div>
-    </div>
+    </Router>
   );
 }
 
