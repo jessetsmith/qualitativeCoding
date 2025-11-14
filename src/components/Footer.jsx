@@ -15,7 +15,7 @@ function Footer() {
                 <Link to="/" className="footer-link">Home</Link>
               </li>
               <li>
-                <Link to="/ethnographic" className="footer-link">Ethnographic Research</Link>
+                <Link to="/ethnographic" className="footer-link">Qualitative Research</Link>
               </li>
               <li>
                 <Link to="/infographic" className="footer-link">Literature Review</Link>
@@ -39,6 +39,19 @@ function Footer() {
                    rel="noopener noreferrer" 
                    className="footer-link">
                   Media Gallery
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3 className="footer-title">Creative Writing</h3>
+            <ul className="footer-link-list">
+              <li>
+                <a href="https://bittersweetwoman.com" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="footer-link">
+                  Bittersweet Woman
                 </a>
               </li>
             </ul>

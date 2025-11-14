@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Ethnographic from "./components/Ethnographic";
 import Infographic from "./components/Infographic";
+import References from "./components/References";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ethnographic" element={<Ethnographic />} />
             <Route path="/infographic" element={<Infographic />} />
+            <Route path="/references" element={<References />} />
           </Routes>
         </div>
         <Footer />

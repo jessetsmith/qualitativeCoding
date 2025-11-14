@@ -28,6 +28,39 @@ function TopMenu() {
             </div>
             <div
                 className="menu-item"
+                onMouseEnter={() => handleMouseEnter('qualitative')}
+                onMouseLeave={handleMouseLeave}
+            >
+                <span>Qualitative Research</span>
+                {activeDropdown === 'qualitative' && (
+                    <div className="dropdown-content">
+                        <Link to="/ethnographic" className="dropdown-item-link">
+                            <span>Field Research</span>
+                        </Link>
+                    </div>
+                )}
+            </div>
+
+            <div
+                className="menu-item"
+                onMouseEnter={() => handleMouseEnter('litReview')}
+                onMouseLeave={handleMouseLeave}
+            >
+                <span>Lit Review</span>
+                {activeDropdown === 'litReview' && (
+                    <div className="dropdown-content">
+                        <Link to="/infographic" className="dropdown-item-link">
+                            <span>Curating with Care</span>
+                        </Link>
+                        <Link to="/references" className="dropdown-item-link">
+                            <span>References</span>
+                        </Link>
+                    </div>
+                )}
+            </div>
+
+            <div
+                className="menu-item"
                 onMouseEnter={() => handleMouseEnter('media')}
                 onMouseLeave={handleMouseLeave}
             >
@@ -94,7 +127,7 @@ function TopMenu() {
                             className="dropdown-item"
                             onMouseEnter={() => handleSubmenuEnter('efj')}
                         >
-                            <span>Ethnographic Field Journals</span>
+                            <span>Qualitative Field Journals</span>
                             {activeSubmenu === 'efj' && (
                                 <div className="submenu-content">
                                     <a href="https://drive.google.com/file/d/1Zlxj5MrV1pKAz3zcbdMKO9aio3m1Gt3Y/view?usp=drive_link" target="_blank" rel="noopener noreferrer">EFJ 1-2</a>
@@ -117,12 +150,12 @@ function TopMenu() {
                 {activeDropdown === 'resources' && (
                     <div className="dropdown-content">
                         <div
-                            className="dropdown-item"
+                            className="dropdown-item dropdown-item-left"
                             onMouseEnter={() => handleSubmenuEnter('drive')}
                         >
                             <span>Drive Files</span>
                             {activeSubmenu === 'drive' && (
-                                <div className="submenu-content">
+                                <div className="submenu-content submenu-content-left">
                                     <a
                                         href="https://drive.google.com/drive/folders/1wtnqNGUr3rHDH9ceps5NiSnmHhRTbNQ7?usp=sharing"
                                         target="_blank"
@@ -137,48 +170,6 @@ function TopMenu() {
                 )}
             </div>
 
-            <div
-                className="menu-item"
-                onMouseEnter={() => handleMouseEnter('ethnographic')}
-                onMouseLeave={handleMouseLeave}
-            >
-                <span>Ethnographic</span>
-                {activeDropdown === 'ethnographic' && (
-                    <div className="dropdown-content">
-                        <Link to="/ethnographic" className="dropdown-item-link">
-                            <span>Field Research</span>
-                        </Link>
-                    </div>
-                )}
-            </div>
-
-            <div
-                className="menu-item"
-                onMouseEnter={() => handleMouseEnter('litReview')}
-                onMouseLeave={handleMouseLeave}
-            >
-                <span>Lit Review</span>
-                {activeDropdown === 'litReview' && (
-                    <div className="dropdown-content">
-                        <Link to="/infographic" className="dropdown-item-link">
-                            <span>Infographic</span>
-                        </Link>
-                    </div>
-                )}
-            </div>
-
-            <div
-                className="menu-item"
-                onMouseEnter={() => handleMouseEnter('references')}
-                onMouseLeave={handleMouseLeave}
-            >
-                <span>References</span>
-                {activeDropdown === 'references' && (
-                    <div className="dropdown-content">
-                        <p>Coming Soon</p>
-                    </div>
-                )}
-            </div>
         </div>
     );
 }

@@ -49,6 +49,7 @@
   font-size: 0.95rem;
   transition: color 0.3s ease;
   display: inline-block;
+  cursor: pointer;
 }
 
 .footer-link:hover {
@@ -81,6 +82,7 @@
   text-decoration: none;
   color: #e0e0e0;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .credit-link:hover {

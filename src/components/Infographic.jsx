@@ -435,6 +435,11 @@ function Infographic() {
 
         <footer className="text-center mt-12">
           <p className="text-md text-[#85252a] font-medium">This infographic visualizes a framework I synthesized from <strong>44</strong> academic articles on <strong>art, art therapy, art education, environmental design, trauma informed practice, museum studies, and curation</strong>.</p>
+          <div className="mt-4">
+            <Link to="/references" className="text-[#6A0000] hover:text-[#9e4a28] font-medium transition duration-150 underline">
+              View Complete References List →
+            </Link>
+          </div>
         </footer>
         
         {/* DOWNLOAD BUTTON */}
