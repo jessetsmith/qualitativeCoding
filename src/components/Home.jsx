@@ -36,7 +36,7 @@ function Home() {
           <div className="section-card">
             <h2 className="section-title">Literature Review</h2>
             <p className="section-description">
-              Discover a comprehensive framework for trauma-informed museum practice, synthesized from 44 academic 
+              Discover a comprehensive framework for trauma-informed museum practice, synthesized from 70 academic 
               articles. This data-driven infographic presents principles, theoretical foundations, spatial applications, 
               and healing outcomes for curatorial practice.
             </p>

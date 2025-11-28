@@ -51,36 +51,28 @@
 }
 
 .references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 .reference-item {
+  font-size: 0.875rem;
+  color: #ffffff;
+  line-height: 1.625;
   background-color: #2a2a2a;
   border: 1px solid #4a4a4a;
   border-radius: 6px;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .reference-item:hover {
   border-color: #6a6a6a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.reference-authors {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-
-.reference-article {
-  font-size: 0.95rem;
-  color: #c0c0c0;
-  line-height: 1.6;
 }
 
 .references-footer {

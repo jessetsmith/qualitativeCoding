@@ -1,7 +1,7 @@
 .site-footer {
-  background-color: #1a1a1a;
+  background-color: #2a2a2a;
   border-top: 2px solid #4a4a4a;
-  color: #e0e0e0;
+  color: #ffffff;
   margin-top: auto;
   padding: 2rem 1rem 1rem;
   font-family: Arial, sans-serif;
@@ -43,8 +43,8 @@
   margin-bottom: 0.5rem;
 }
 
-.footer-link {
-  color: #b0b0b0;
+.site-footer .footer-link {
+  color: #d0d0d0 !important;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.3s ease;
@@ -52,8 +52,8 @@
   cursor: pointer;
 }
 
-.footer-link:hover {
-  color: #ffffff;
+.site-footer .footer-link:hover {
+  color: #ffffff !important;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .credit-text {
-  color: #b0b0b0;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -80,7 +80,7 @@
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #e0e0e0;
+  color: #ffffff;
   transition: opacity 0.3s ease;
   cursor: pointer;
 }
@@ -99,7 +99,7 @@
 .credit-name {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

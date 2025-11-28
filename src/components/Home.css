@@ -1,8 +1,19 @@
 .home-container {
   min-height: 100vh;
   background-color: #1a1a1a;
-  color: #e0e0e0;
+  color: #ffffff !important;
   font-family: Arial, sans-serif;
+}
+
+/* Ensure all text elements are white and visible */
+.home-container p {
+  color: #ffffff !important;
+}
+
+.home-container h1,
+.home-container h2,
+.home-container h3 {
+  color: #ffffff !important;
 }
 
 .home-hero {
@@ -22,7 +33,7 @@
 
 .home-subtitle {
   font-size: 1.5rem;
-  color: #b0b0b0;
+  color: #ffffff;
   margin: 0;
   font-weight: 300;
 }
@@ -41,7 +52,7 @@
 .intro-text {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #d0d0d0;
+  color: #ffffff;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -59,6 +70,7 @@
   border-radius: 8px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
 }
 
 .section-card:hover {
@@ -69,22 +81,26 @@
 
 .section-title {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 0 0 1rem 0;
   border-bottom: 2px solid #4a4a4a;
   padding-bottom: 0.5rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .section-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #c0c0c0;
+  color: #ffffff !important;
   margin: 0 0 1.5rem 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .section-link {
   display: inline-block;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #4a4a4a;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -92,6 +108,8 @@
   font-weight: 500;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  opacity: 1;
+  visibility: visible;
 }
 
 .section-link:hover {
@@ -121,7 +139,7 @@
 
 .nav-item-link {
   text-decoration: none;
-  color: inherit;
+  color: #ffffff;
   display: flex;
   height: 100%;
   cursor: pointer;
@@ -143,6 +161,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #ffffff;
 }
 
 .nav-item:hover {
@@ -158,7 +177,7 @@
 
 .nav-item p {
   font-size: 0.9rem;
-  color: #b0b0b0;
+  color: #ffffff;
   margin: 0;
   line-height: 1.5;
 }
