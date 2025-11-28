@@ -120,9 +120,6 @@ function Infographic() {
           <h2 className="infographic-subtitle">
             A Data-Driven Framework for Trauma-Informed Museum Practice
           </h2>
-          <p className="infographic-nav-hint">
-            1. Principles 2. Foundation 3. Environment 4. Outcomes 5. Implications 6. Framework 7. References
-          </p>
         </header>
 
         {/* MODERNIZED STICKY NAVIGATION WITH GRADIENTS */}
@@ -149,7 +146,7 @@ function Infographic() {
         </section>
 
         {/* 1. CORE PRINCIPLES (6 TIC Principles) */}
-        <section id="section1_principles" className="section-with-offset">
+        <section id="section1_principles" className="section-with-offset standard-section">
           <h3 className="section-header">
             1. The Six Core Principles of Trauma-Informed Care (TIC)
           </h3>
@@ -185,7 +182,7 @@ function Infographic() {
         </section>
 
         {/* 2. THE FOUNDATION: CREATIVE & THEORETICAL GROUNDING */}
-        <section id="section2_foundation" className="section-with-offset foundation-section">
+        <section id="section2_foundation" className="section-with-offset standard-section">
           <h3 className="section-header secondary">
             2. The Foundation: Creative &amp; Theoretical Grounding
           </h3>
@@ -230,7 +227,7 @@ function Infographic() {
         </section>
 
         {/* 3. THE ENVIRONMENT: SPATIAL & AFFECTIVE APPLICATIONS */}
-        <section id="section3_environment" className="section-with-offset environment-section">
+        <section id="section3_environment" className="section-with-offset standard-section">
           <h3 className="section-header">
             3. The Environment: Spatial &amp; Affective Applications
           </h3>
@@ -254,7 +251,7 @@ function Infographic() {
         </section>
 
         {/* 4. THE RESULT: EMBODIED PRACTICES & HEALING OUTCOMES */}
-        <section id="section4_result" className="section-with-offset outcomes-section">
+        <section id="section4_result" className="section-with-offset standard-section">
           <h3 className="section-header secondary">
             4. The Result: Embodied Practices &amp; Healing Outcomes
           </h3>
@@ -331,7 +328,7 @@ function Infographic() {
         </section>
 
         {/* 5. IMPLICATIONS, GAPS, AND FUTURE RESEARCH */}
-        <section id="section5_gaps" className="section-with-offset">
+        <section id="section5_gaps" className="section-with-offset standard-section">
           <h3 className="section-header">
             5. Implications, Gaps, and Future Research
           </h3>
@@ -370,7 +367,7 @@ function Infographic() {
         </section>
 
         {/* 6. THE FRAMEWORK (The Core Cyclical Model) */}
-        <section id="section6_framework" className="section-with-offset framework-section">
+        <section id="section6_framework" className="section-with-offset standard-section">
           <h3 className="section-header secondary">
             6. The Framework
           </h3>
