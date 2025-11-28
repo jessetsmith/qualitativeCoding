@@ -64,6 +64,13 @@ body {
   align-items: flex-start;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .content-area {
+    flex-direction: row;
+  }
 }
 
 .side-panel {

@@ -62,6 +62,7 @@ function References() {
     "Stellar, J. E., Gordon, A. M., Piff, P. K., Cordaro, D. T., Anderson, C. L., Bai, Y., Maruskin, L. A., & Keltner, D. (2017). Self-transcendent emotions and their social functions. Emotion Review, 9(3), 200–207.",
     "Tedeschi, R. G., & Calhoun, L. G. (1996). The Posttraumatic Growth Inventory: Measuring the positive legacy of trauma. Journal of Traumatic Stress, 9(3), 455–471.",
     "Tedeschi, R. G., & Calhoun, L. G. (2004). Posttraumatic growth: Conceptual foundations and empirical evidence. Psychological Inquiry, 15(1), 1–18.",
+    "The Children's Museum of Indianapolis. (n.d.). Emmett Till & Mamie Till-Mobley: Let the world see [Museum exhibition]. https://www.childrensmuseum.org/traveling-exhibits/emmett-till-mamie-till-mobley-let-the-world-see",
     "The power of art: How creativity can heal and transform lives. (2024). British Journal of Arts and Humanities, 216–223. https://doi.org/10.34104/bjah.02402160223",
     "Valdesolo, P. (2021). Stop making sense? Annals of the New York Academy of Sciences, 1501(1), 1–10.",
     "Van der Kolk, B. A. (1994). The body keeps the score: Memory and the evolving psychobiology of PTSD. Harvard Review of Psychiatry, 1(5), 253–265.",
@@ -86,7 +87,7 @@ function References() {
           </Link>
           <h1 className="references-title">Complete References List</h1>
           <p className="references-subtitle">
-            A comprehensive bibliography of academic articles informing the "Reframing Environments for Resilience" framework. This framework was synthesized from 70 academic articles on art, art therapy, art education, environmental design, trauma informed practice, museum studies, and curation.
+            A comprehensive bibliography of academic articles informing the "Reframing Environments for Resilience" framework. This framework was synthesized from 71 academic articles on art, art therapy, art education, environmental design, trauma informed practice, museum studies, and curation.
           </p>
         </div>
 

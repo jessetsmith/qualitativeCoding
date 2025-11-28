@@ -3,28 +3,54 @@
 .journal-tabs {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 15px 0;
   position: relative;
   background-color: #eaeaea; /* Light background color */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 10px; /* Padding around the tabs */
+  padding: 8px; /* Reduced padding for mobile */
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .journal-tabs {
+    flex-direction: row;
+    margin: 20px 0;
+    padding: 10px;
+    gap: 0;
+  }
 }
 
 .journal-tabs button {
   background-color: #6a6a6a;
   color: white;
   border: 1px solid black;
-  padding: 10px 40px; /* Increase padding for wider tabs */
-  margin-left: -10px; /* Overlapping effect */
+  padding: 12px 16px; /* Increased padding for mobile */
+  margin-left: 0; /* No overlap on mobile */
   cursor: pointer;
   position: relative;
   z-index: 1;
   transition: background-color 0.3s;
-  flex-grow: 1; /* Allow tabs to grow and fill space */
-  max-width: 200px; /* Optional: Set a max width */
-  border-radius: 10px;
-  margin-right: 20px;
+  width: 100%; /* Full width on mobile */
+  border-radius: 8px;
+  margin-right: 0;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .journal-tabs button {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px 40px;
+    margin-left: -10px; /* Overlapping effect on larger screens */
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 1rem;
+  }
 }
 
 .journal-tabs button:first-child {
@@ -41,9 +67,9 @@
 }
 
 .journal-content {
-  max-width: 80%;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 95%;
+  margin: 15px auto;
+  padding: 15px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -51,6 +77,16 @@
   word-wrap: break-word; /* For older browsers */
   white-space: pre-wrap; /* Preserves whitespace and wraps text */
   text-align: left; /* Align text to the left for better readability */
+  font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .journal-content {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1rem;
+  }
 }
 
 .pdf-content {
