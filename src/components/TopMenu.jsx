@@ -68,6 +68,9 @@ function TopMenu() {
                                 <Link to="/ethnographic" className="dropdown-item-link" onClick={handleLinkClick}>
                                     <span>Field Research</span>
                                 </Link>
+                                <Link to="/barriers-access" className="dropdown-item-link" onClick={handleLinkClick}>
+                                    <span>Barriers &amp; Access</span>
+                                </Link>
                             </div>
                         )}
                     </div>

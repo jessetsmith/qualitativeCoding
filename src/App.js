@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Ethnographic from "./components/Ethnographic";
 import Infographic from "./components/Infographic";
 import References from "./components/References";
+import BarriersAccessFlyer from "./components/BarriersAccessFlyer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/ethnographic" element={<Ethnographic />} />
             <Route path="/infographic" element={<Infographic />} />
             <Route path="/references" element={<References />} />
+            <Route path="/barriers-access" element={<BarriersAccessFlyer />} />
           </Routes>
         </div>
         <Footer />
