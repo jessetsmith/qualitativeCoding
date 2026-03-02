@@ -4,11 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <title>Qualitative Research</title>
+  <title>Redirecting…</title>
+  <script>
+    (function (l) {
+      // Preserve the original path/query/hash in ?p= so the SPA can restore it.
+      var p = l.pathname + l.search + l.hash;
+      var target = l.origin + '/?p=' + encodeURIComponent(p);
+      l.replace(target);
+    })(window.location);
+  </script>
 </head>
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <noscript>
+    This site uses JavaScript for routing. Please go back to the home page.
+  </noscript>
 </body>
 </html>
 
