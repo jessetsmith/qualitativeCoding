@@ -22,6 +22,60 @@ const RESPONSE_OPTIONS = [
   "I'm doing great!",
 ];
 
+const UNIVERSITY_BLOCKED_TERMS = [
+  'fuck',
+  'fucking',
+  'fucked',
+  'fucker',
+  'motherfucker',
+  'motherfuckers',
+  'motherfucking',
+  'motherfucked',
+  'shit',
+  'shitty',
+  'cunt',
+  'cunts',
+  'pussy',
+  'pussies',
+  'whore',
+  'whores',
+  'slut',
+  'sluts',
+  'faggot',
+  'faggots',
+  'bitches',
+  'bitch',
+  'nigger',
+  'nigga',
+  'niggers',
+];
+
+function validateUniversity(value) {
+  const trimmed = value.trim();
+
+  if (!trimmed) {
+    return { ok: true, message: '' };
+  }
+
+  if (trimmed.length > 120) {
+    return {
+      ok: false,
+      message: 'Please keep the university or institution under 120 characters.',
+    };
+  }
+
+  const lower = trimmed.toLowerCase();
+  if (UNIVERSITY_BLOCKED_TERMS.some((term) => lower.includes(term))) {
+    return {
+      ok: false,
+      message:
+        'The university or institution field contains language that cannot be submitted. Please rephrase.',
+    };
+  }
+
+  return { ok: true, message: '' };
+}
+
 function BarriersAccessFlyer() {
   const [university, setUniversity] = useState('');
   const [selectedResponse, setSelectedResponse] = useState(null);
@@ -42,6 +96,14 @@ function BarriersAccessFlyer() {
       showModal('Please choose one experience that resonates with you.');
       return;
     }
+
+    const uniCheck = validateUniversity(university);
+    if (!uniCheck.ok) {
+      e.preventDefault();
+      showModal(uniCheck.message);
+      return;
+    }
+
     showModal('Submitting...');
     setTimeout(() => {
       showModal('Thank you. Your response has been recorded.');
