@@ -54,6 +54,11 @@ function Footer() {
                   Bittersweet Woman
                 </a>
               </li>
+              <li>
+                <Link to="/admin" className="footer-link">
+                  Admin
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

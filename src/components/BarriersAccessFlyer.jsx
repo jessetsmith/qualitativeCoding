@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import './BarriersAccessFlyer.css';
+import { isAdminLoggedIn } from '../utils/adminAuth';
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyCsocWJbfU5W_POf7ofFN34wC1Q7eW_4T8VN8DZ1EAbN9tq8UjH1lfgIDWA4_dSKrf2A/exec';
+const SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbz4UXrGj7Fs6x4sI9_w-cbTMUj37fUo6FcUUGRW-9ZuGOWfd5qpSONpRvNnrGVUe-5yXw/exec';
 
 const RESPONSE_OPTIONS = [
   'I had to face a barrier today.',
@@ -78,10 +79,12 @@ function validateUniversity(value) {
 
 function BarriersAccessFlyer() {
   const [university, setUniversity] = useState('');
+  const [frequency, setFrequency] = useState('');
   const [selectedResponse, setSelectedResponse] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
   const formRef = useRef(null);
+  const adminActive = isAdminLoggedIn();
 
   const showModal = (message) => {
     setModalMessage(message);
@@ -104,11 +107,54 @@ function BarriersAccessFlyer() {
       return;
     }
 
+    let parsedFrequency = null;
+    const trimmedFreq = frequency.trim();
+    if (adminActive && trimmedFreq) {
+      const value = parseInt(trimmedFreq, 10);
+      if (Number.isNaN(value) || value < 0) {
+        e.preventDefault();
+        showModal('Frequency must be a non‑negative number.');
+        return;
+      }
+      parsedFrequency = value;
+    }
+
+    if (adminActive && parsedFrequency !== null) {
+      const formData = new FormData();
+      formData.append('Response', selectedResponse);
+      formData.append('Frequency', String(parsedFrequency));
+       // Use the unified script: mark this as an admin frequency collection.
+      formData.append('Collection', 'FrequencyCollection');
+      if (university.trim()) {
+        formData.append('Institution', university.trim());
+      }
+      formData.append('Type', 'barriers-frequency');
+
+      if (navigator.sendBeacon) {
+        const blob = new Blob([new URLSearchParams(formData)], {
+          type: 'application/x-www-form-urlencoded',
+        });
+        navigator.sendBeacon(SCRIPT_URL, blob);
+      } else {
+        // Fire-and-forget; we don't read the response to avoid CORS issues.
+        fetch(SCRIPT_URL, { method: 'POST', body: formData, mode: 'no-cors' }).catch(() => {});
+      }
+    }
+
+    // For admins, we only want the frequency collection request to be saved.
+    // Prevent the main DataCollection form POST from firing.
+    if (adminActive) {
+      e.preventDefault();
+    }
+
     showModal('Submitting...');
     setTimeout(() => {
       showModal('Thank you. Your response has been recorded.');
       setSelectedResponse(null);
       setUniversity('');
+      if (adminActive) {
+        setFrequency('');
+      }
     }, 2000);
   };
 
@@ -133,7 +179,7 @@ function BarriersAccessFlyer() {
         <form
           id="barriersAccessForm"
           ref={formRef}
-          action={GOOGLE_SCRIPT_URL}
+          action={SCRIPT_URL}
           method="post"
           target="flyer-submit-frame"
           onSubmit={handleSubmit}
@@ -151,6 +197,20 @@ function BarriersAccessFlyer() {
               className="flyer-input"
             />
           </div>
+
+          {adminActive && (
+            <div className="flyer-field flyer-field-frequency">
+              <label htmlFor="frequency">Admin only: frequency (optional)</label>
+              <input
+                type="number"
+                id="frequency"
+                min="0"
+                className="flyer-input"
+                value={frequency}
+                onChange={(e) => setFrequency(e.target.value)}
+              />
+            </div>
+          )}
 
           <div className="flyer-response-section">
             <div className="flyer-response-banner">
@@ -171,6 +231,7 @@ function BarriersAccessFlyer() {
           </div>
 
           <input type="hidden" name="Response" value={selectedResponse || ''} />
+          <input type="hidden" name="Collection" value="DataCollection" />
           <input
             type="hidden"
             name="ReturnUrl"

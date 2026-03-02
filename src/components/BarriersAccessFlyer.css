@@ -64,7 +64,7 @@
   flex: 1;
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 2rem;
+  padding: 1.25rem 0.75rem 2rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -89,19 +89,19 @@
 }
 
 .flyer-intro {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .flyer-tagline {
   color: var(--flyer-rose);
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin: 0 0 0.5rem 0;
 }
 
 .flyer-title {
   color: var(--flyer-offwhite);
-  font-size: 1.75rem;
-  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem 0;
   font-weight: 600;
 }
 
@@ -213,8 +213,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.625rem;
-  padding: 1.25rem 0.5rem;
+  gap: 0.5rem;
+  padding: 1rem 0.25rem 1.25rem;
   background-color: var(--flyer-charcoal);
   border: 2px solid var(--flyer-teal);
   border-top: none;
@@ -227,14 +227,14 @@
   color: var(--flyer-offwhite);
   border: 2px solid var(--flyer-rose);
   border-radius: 10px;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.95rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   cursor: pointer;
   transition: border-color 0.2s, background-color 0.2s, color 0.2s, transform 0.15s, box-shadow 0.2s;
   text-align: center;
-  min-width: 140px;
-  max-width: 280px;
+  min-width: 120px;
+  max-width: 260px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,7 +267,7 @@
 
 .flyer-submit {
   align-self: flex-start;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1.25rem;
   background-color: var(--flyer-teal);
   color: var(--flyer-offwhite);
   border: 2px solid var(--flyer-teal);
