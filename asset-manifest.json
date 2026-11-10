@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdc8054d.css",
-    "main.js": "/static/js/main.5e213815.js",
+    "main.css": "/static/css/main.f2013dce.css",
+    "main.js": "/static/js/main.be9ab7a0.js",
     "static/js/453.da0bb8fc.chunk.js": "/static/js/453.da0bb8fc.chunk.js",
     "static/media/treeShadow.jpeg": "/static/media/treeShadow.ba688deae64560472d37.jpeg",
     "static/media/paintSplatterPink.jpeg": "/static/media/paintSplatterPink.e30a7cc91a099c77b954.jpeg",
@@ -18,14 +18,18 @@
     "static/media/EFJ_5-6.jpg": "/static/media/EFJ_5-6.560de983c3df102016eb.jpg",
     "static/media/NOWHERE.png": "/static/media/NOWHERE.a0df7b90cea19ad42ec4.png",
     "static/media/IntroTextVector.png": "/static/media/IntroTextVector.c2dd5ceb3e1f6ec1556a.png",
+    "static/media/title-slide.jpg": "/static/media/title-slide.68520078ed7c7f3dcf60.jpg",
+    "static/media/data-collection.jpg": "/static/media/data-collection.cca7b4aa663f564c7eb2.jpg",
     "static/media/busBPHero.jpg": "/static/media/busBPHero.c8da7ee36efd701e753c.jpg",
+    "static/media/conceptual-synthesis.jpg": "/static/media/conceptual-synthesis.dfdd2b40b21f9031c628.jpg",
+    "static/media/finding-connections.jpg": "/static/media/finding-connections.66980a4ff5b84627ebf6.jpg",
     "index.html": "/index.html",
-    "main.fdc8054d.css.map": "/static/css/main.fdc8054d.css.map",
-    "main.5e213815.js.map": "/static/js/main.5e213815.js.map",
+    "main.f2013dce.css.map": "/static/css/main.f2013dce.css.map",
+    "main.be9ab7a0.js.map": "/static/js/main.be9ab7a0.js.map",
     "453.da0bb8fc.chunk.js.map": "/static/js/453.da0bb8fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdc8054d.css",
-    "static/js/main.5e213815.js"
+    "static/css/main.f2013dce.css",
+    "static/js/main.be9ab7a0.js"
   ]
 }
