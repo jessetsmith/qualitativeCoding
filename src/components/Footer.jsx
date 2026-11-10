@@ -18,6 +18,9 @@ function Footer() {
                 <Link to="/ethnographic" className="footer-link">Qualitative Research</Link>
               </li>
               <li>
+                <Link to="/professional-philosophy" className="footer-link">Professional Philosophy</Link>
+              </li>
+              <li>
                 <Link to="/infographic" className="footer-link">Literature Review</Link>
               </li>
             </ul>

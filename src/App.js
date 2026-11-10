@@ -8,6 +8,7 @@ import Ethnographic from "./components/Ethnographic";
 import Infographic from "./components/Infographic";
 import References from "./components/References";
 import BarriersAccessFlyer from "./components/BarriersAccessFlyer";
+import ProfessionalPhilosophy from "./components/ProfessionalPhilosophy";
 import AdminLogin from "./components/AdminLogin";
 import AdminDashboard from "./components/AdminDashboard";
 import AdminBarriersAccess from "./components/AdminBarriersAccess";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/infographic" element={<Infographic />} />
             <Route path="/references" element={<References />} />
             <Route path="/barriers-access" element={<BarriersAccessFlyer />} />
+            <Route path="/professional-philosophy" element={<ProfessionalPhilosophy />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"
