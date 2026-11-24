@@ -1,47 +1,76 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import titleSlide from '../assets/images/philosophy/title-slide.jpg';
 
 function Home() {
   return (
     <div className="home-container">
       <div className="home-hero">
-        <h1 className="home-title">Research Archive</h1>
-        <p className="home-subtitle">Exploring Qualitative Research and Trauma-Informed Museum Practice</p>
+        <div className="home-hero-inner">
+          <p className="home-kicker">Research Archive</p>
+          <h1 className="home-title">Research Archive</h1>
+          <p className="home-subtitle">Exploring qualitative research and trauma-informed museum practice</p>
+        </div>
       </div>
 
       <div className="home-content">
         <section className="home-intro">
           <p className="intro-text">
-            Welcome to this digital archive, a comprehensive collection of materials 
-            exploring qualitative research and trauma-informed curatorial practices. This site brings together 
-            field observations, media documentation, academic analysis, and theoretical frameworks to provide 
-            insights into how spaces can be designed for healing and connection.
+            Welcome to this digital archive, a collection of field observations, media,
+            academic analysis, and theoretical frameworks for designing spaces of healing
+            and connection.
           </p>
+        </section>
+
+        <section className="home-highlight" aria-labelledby="home-philosophy">
+          <Link to="/professional-philosophy" className="highlight-link">
+            <div className="highlight-kicker">
+              <p>
+                <span className="kicker-mark" aria-hidden="true"></span>
+                <span>Professional Philosophy</span>
+                <span className="kicker-dot">·</span>
+                <span className="kicker-highlight">Highlight</span>
+              </p>
+              <span className="highlight-year">2026</span>
+            </div>
+            <h2 className="highlight-title" id="home-philosophy">Expressions of Corporeality</h2>
+            <p className="highlight-dek">
+              Navigating ethical safeguards and relational containers in sensory art education
+            </p>
+            <p className="highlight-body">
+              A philosophy of care in the studio: voluntary consent, pacing, and shared
+              standards of care across art education and counseling.
+            </p>
+            <span className="highlight-open">Read more</span>
+            <img
+              className="highlight-image"
+              src={titleSlide}
+              alt="Title slide for Expressions of Corporeality, with counselor and student survey codes."
+            />
+          </Link>
         </section>
 
         <section className="home-sections">
           <div className="section-card">
             <h2 className="section-title">Qualitative Research</h2>
             <p className="section-description">
-              Explore field observations, images, audio recordings, and qualitative field journals documenting 
-              real-world research in transit spaces and community environments. This collection captures the 
-              sensory, social, and spatial dimensions of everyday experiences.
+              Field observations, images, audio recordings, and qualitative field journals
+              from transit spaces and community environments.
             </p>
             <Link to="/ethnographic" className="section-link">
-              View Qualitative Research Content →
+              Read more
             </Link>
           </div>
 
           <div className="section-card">
             <h2 className="section-title">Literature Review</h2>
             <p className="section-description">
-              Discover a comprehensive framework for trauma-informed museum practice, synthesized from 70 academic 
-              articles. This data-driven infographic presents principles, theoretical foundations, spatial applications, 
-              and healing outcomes for curatorial practice.
+              A framework for trauma-informed museum practice, synthesized from 70 academic
+              articles, with principles, spatial applications, and healing outcomes.
             </p>
             <Link to="/infographic" className="section-link">
-              View Literature Review →
+              Read more
             </Link>
           </div>
         </section>
@@ -49,9 +78,9 @@ function Home() {
         <section className="home-navigation">
           <h2 className="nav-title">Explore by Category</h2>
           <div className="nav-grid">
-            <a 
-              href="https://drive.google.com/drive/folders/1WWa0w394ScHErY20fUzhmomYHa_QMxPe?usp=drive_link" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/drive/folders/1WWa0w394ScHErY20fUzhmomYHa_QMxPe?usp=drive_link"
+              target="_blank"
               rel="noopener noreferrer"
               className="nav-item-link"
             >
@@ -66,9 +95,9 @@ function Home() {
                 <p>Qualitative field journals and analysis documents</p>
               </div>
             </Link>
-            <a 
-              href="https://drive.google.com/drive/folders/1wtnqNGUr3rHDH9ceps5NiSnmHhRTbNQ7?usp=sharing" 
-              target="_blank" 
+            <a
+              href="https://drive.google.com/drive/folders/1wtnqNGUr3rHDH9ceps5NiSnmHhRTbNQ7?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="nav-item-link"
             >

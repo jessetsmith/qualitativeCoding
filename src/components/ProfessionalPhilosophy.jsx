@@ -186,14 +186,14 @@ function ProfessionalPhilosophy() {
           <figure className="ph-figure">
             <img
               src={conceptualSynthesis}
-              alt="Conceptual Synthesis diagram on a coral and orange gradient. Three framed boxes connect: Art Education and Visual Culture at top; Special Education and SERP Pedagogical Lens and Clinical Counseling and Rehabilitation below; an Intersection box labeled Classroom Relational Containers and Safeguards. Collage photos of hands folding paper and QR codes for the student and counselor surveys border the slide."
+              alt="Conceptual Synthesis diagram on a coral gradient. Art Education and Visual Culture connects down to Intersections and Interdisciplinary, then splits into Lifespan and Developmental Pedagogical Lenses and Mental Health Counseling and Rehabilitation. Collage photos of a metallic form and hands cutting a paper strip border the slide."
             />
             <figcaption>
               <b>Figure 1</b>
               <span>
-                Conceptual Synthesis: Art Education &amp; Visual Culture, Special Education &amp;
-                SERP, Clinical Counseling &amp; Rehabilitation, and Overlap 1 (Classroom Relational
-                Containers &amp; Safeguards).
+                Conceptual Synthesis: Art Education &amp; Visual Culture, Intersections and
+                Interdisciplinary practice, Lifespan &amp; Developmental Pedagogical Lenses, and
+                Mental Health Counseling &amp; Rehabilitation.
                 <span className="ph-credit">
                   Google. (2026, November 8). System flowchart for needs assessment [Large language
                   model]. google.com
@@ -287,13 +287,13 @@ function ProfessionalPhilosophy() {
           <figure className="ph-figure">
             <img
               src={dataCollection}
-              alt="Data Collection Strategy diagram on a coral gradient. A triangle links the Student Reflection Form (active pilot sensation), the Counseling Community Survey (asynchronous feedback), and Peer Needs-Assessment Interviews (projected somatic and play focus). Center labels read Student-Peer Alignment and Practitioner Alignment. Photos show hands holding cut paper loops and folded paper forms, with QR codes for both surveys."
+              alt="Data Collection Strategy diagram on a coral gradient. Lines connect Student Reflection, Peer-Student-Teacher Coleadership, the Counselor Community Survey, Needs-Assessment Interviews, and Practitioner Connection. Photos of hands, paper forms, and material studies border the slide, with QR codes for the counselor and student surveys."
             />
             <figcaption>
               <b>Figure 2</b>
               <span>
-                Three-Tier Data Collection &amp; Framework Alignment: Student Reflection Survey,
-                Counseling Community Survey, and Qualitative Peer Interviews.
+                Data Collection Strategy: Student Reflection, Peer-Student-Teacher Coleadership,
+                Counselor Community Survey, Needs-Assessment Interviews, and Practitioner Connection.
                 <span className="ph-credit">
                   Google. (2026, November 8). Data collection, needs assessment [Large language
                   model]. google.com
@@ -346,14 +346,15 @@ function ProfessionalPhilosophy() {
           <figure className="ph-figure">
             <img
               src={findingConnections}
-              alt="Finding Connections comparison on a coral gradient. Left: Studio Relational Container (Art Education): embodied learning, sensory exploration, open-ended play, facilitated by educator, low-stakes materials, option to observe or opt out without penalty. Right: Clinical Therapeutic Container (Counseling): clinical diagnosis, trauma processing, treatment plans, facilitated by licensed counseling clinician, formal confidentiality and HIPAA boundaries. Overlap: voluntary consent, emotional safety, grounding. A black and white portrait of Lygia Clark sits above the overlap."
+              alt="Finding Connections diagram on a coral gradient. Left: Classroom Relational Container (Art Education), including embodied learning, physical and sensorial exploration, open-ended discovery, and the option to observe or opt out. Right: Clinical Therapeutic Container (Counseling), including clinical diagnosis, treatment plans, formal confidentiality, and grounding. Overlap: forms of processing, means for communication, community, voluntary consent, emotional safety, and choice. A black and white portrait sits above the overlap, with QR codes for both surveys."
             />
             <figcaption>
               <b>Figure 3</b>
               <span>
-                Finding Connections: Studio Relational Containers (Art Education), Clinical
-                Therapeutic Containers (Counseling), and the Overlap (Voluntary Consent, Emotional
-                Safety, Grounding). I aim to highlight the overlap in our respective fields.
+                Finding Connections: Classroom Relational Containers (Art Education), Clinical
+                Therapeutic Containers (Counseling), and the Overlap (processing, communication,
+                community, voluntary consent, emotional safety, and choice). I aim to highlight the
+                overlap in our respective fields.
                 <span className="ph-credit">
                   Google. (2026, November 8). Venn diagram, needs assessment [Large language model].
                   google.com
